@@ -4,4 +4,11 @@ authors = ["honzabim <honzabim@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+Duff = "3e2ffa6a-ba38-11e8-0a1c-7b69309e1c72"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+FluxExtensions = "76425322-8995-11e8-0106-93ec95767fb2"
+LightGraphs = "093fc24a-ae57-5d10-9952-331d41423f4d"
+MLDataPattern = "9920b226-0b2a-5f5f-9153-9aa70a013f8b"
+MetaGraphs = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
+Mill = "1d0525e4-8992-11e8-313c-e310e1f6ddea"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
