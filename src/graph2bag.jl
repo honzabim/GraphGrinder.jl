@@ -1,5 +1,6 @@
 neighbors_bags(g) = ScatteredBags([setdiff(neighbors(g, i), i) for i in vertices(g)])
 
+
 graph2bag(verticesnode) = BagNode(verticesnode, [1:nobs(verticesnode)])
 
 function joinve(xv, xe, g)
