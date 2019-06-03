@@ -21,3 +21,5 @@ function vertices2bag(g, mg, vertex2array, edge2array)
     edge_properties = reduce(hcat, [edge2array(mg, e) for e in edges(g)])
     TreeNode(ArrayNode(vertex_properties), joinve(vertex_properties, edge_properties, g))
 end
+
+get_vertex_labels(g, mg, get_label) = [get_label(mg, v) for v in vertices(g)]
