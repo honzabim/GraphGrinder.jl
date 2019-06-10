@@ -6,5 +6,5 @@ function strip_lone_vertices(g)
     return new_graph
 end
 
-component_including_vertex(g, v::BitArray) = map(i -> component_including_vertex(g, i), findall(v))
-component_including_vertex(g, v::Int) = induced_subgraph(g, filter(x -> v in x, weakly_connected_components(g))[1])
+component_including_vertex(g, v::Union{BitArray, Array{Bool, 1}}) = map(i -> component_including_vertex(g, i), findall(v))
+component_including_vertex(g, v::Int) = induced_subgraph(g, filter(x -> v in x, weakly_connected_components(g))[1])[1]
